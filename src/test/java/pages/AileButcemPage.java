@@ -59,17 +59,14 @@ public class AileButcemPage {
     @FindBy(xpath = "(//*[@class='android.widget.EditText'])[5]")
     public MobileElement meslekkutusu;
 
-    @FindBy(xpath = "  (//*[@class='android.widget.TextView'])[2]")
+    @FindBy(xpath = "(//*[@class='android.widget.TextView'])[2]")
     public MobileElement cinsiyetkutusu;
 
-    @FindBy(xpath = "  (//*[@class='android.widget.TextView'])[3]")
+    @FindBy(xpath = "(//*[@class='android.widget.TextView'])[3]")
     public MobileElement kaydetbutonu;
 
     @FindBy(xpath = "  (//*[@class='android.view.ViewGroup'])[6]")
     public MobileElement degisikliklerkaydedildibutonu;
-
-
-
 
 
 public void kututemizlemeMethodu(){
@@ -87,10 +84,10 @@ public void hesabimTextSendkeysMehtodu(String isim, String soyisim, String sehir
     sehirkutusu.sendKeys(ConfigReader.getProperty(sehir));
     yaskutusu.sendKeys(ConfigReader.getProperty(yas));
     meslekkutusu.sendKeys(ConfigReader.getProperty(meslek));
-    Thread.sleep(1500);
+    Thread.sleep(2500);
     cinsiyetkutusu.click();
     ReusableMethods.scrollWithUiScrollableAndClick(cinsiyet);
-    Thread.sleep(1000);
+    Thread.sleep(2000);
     kaydetbutonu.click();
 }
     public void kutuDogrulamaMethodu(String isim,String soyisim,String sehir,String yas,String meslek) throws InterruptedException {

@@ -27,25 +27,26 @@ public class AileButcemStepDefinitions {
 
     }
     @Given("sol kisimdaki menuden {string} bolumune gidin")
-    public void sol_kisimdaki_menuden_bolumune_gidin(String menuSecim) throws InterruptedException {
-        Thread.sleep(1000);
+    public void sol_kisimdaki_menuden_bolumune_gidin(String hesabiminyeri) throws InterruptedException {
+        Thread.sleep(5000);
         page.hamburgerbuton.click();
-        page.hesabimbuton.click();
+        ReusableMethods.scrollWithUiScrollableAndClick(hesabiminyeri);
+       // page.hesabimbuton.click();
     }
-
 
     @Given("hesabim sayfasindaki bilgileri degistirerek {string} {string} {string} {string} {string} ve cinsiyet {string} degisikleri kaydedin ve değişikleri dogrulayin")
     public void hesabim_sayfasindaki_bilgileri_degistirerek_ve_cinsiyet_degisikleri_kaydedin_ve_değişikleri_dogrulayin(String isim, String soyisim, String sehir, String yas, String meslek, String cinsiyet) throws InterruptedException {
         page.hesabimTextSendkeysMehtodu(isim,soyisim,sehir,yas,meslek,cinsiyet);
-        Thread.sleep(1000);
+        Thread.sleep(6000);
         page.degisikliklerkaydedildibutonu.isDisplayed();
+        page.kutuDogrulamaMethodu(isim,soyisim,sehir,yas,meslek);
 
     }
 
-
-
     @Given("uygulamayi kapatir")
     public void uygulamayi_kapatir() {
+        Driver.quitAppiumDriver();
+
 
     }
 }
