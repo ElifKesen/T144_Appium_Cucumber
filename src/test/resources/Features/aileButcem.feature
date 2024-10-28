@@ -6,5 +6,5 @@ Feature:Kullanici AileButcem uygulamasindaki gorevleri yapar
 * "mail" ve "password" bilgilerini girerek kullanici bilgileriyle "Giriş Yap"
 * uygulamaya kullanici bilgileriyle giris yapildigini dogrulayin
 * sol kisimdaki menuden "Hesabım" bolumune gidin
-* hesabim sayfasindaki bilgileri degistirerek "<isim>" "<soyisim>" "<sehir>" "<yas>" "<meslek>" degisikleri kaydedin ve değişikleri dogrulayin
+* hesabim sayfasindaki bilgileri degistirerek "isim" "soyisim" "sehir" "yas" "meslek" ve cinsiyet "Kadın" degisikleri kaydedin ve değişikleri dogrulayin
 * uygulamayi kapatir
