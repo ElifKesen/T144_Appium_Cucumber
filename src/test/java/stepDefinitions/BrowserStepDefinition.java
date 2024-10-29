@@ -32,9 +32,10 @@ public class BrowserStepDefinition {
 
     }
     @Given("para birimi olarak tl secilir")
-    public void para_birimi_olarak_tl_secilir() {
+    public void para_birimi_olarak_tl_secilir() throws InterruptedException {
         page.hamburgerMenu.click();
         page.currencySelect.click();
+        Thread.sleep(5000);
         page.turkisLira.click();
 
     }

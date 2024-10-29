@@ -21,7 +21,7 @@ public class ObiletPage {
     @FindBy(xpath="(//*[@data-language='tr-TR'])[1]")
     public WebElement turkishbutonu;
 
-    @FindBy(xpath = "//*[@class='currency']")
+    @FindBy(xpath = "//*[@title='Currency Select']")
     public WebElement currencySelect;
 
     @FindBy(xpath = "(//*[@data-code='TRY'])[1]")
