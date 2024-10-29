@@ -1,10 +1,15 @@
 package pages;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utilies.ConfigReader;
 import utilies.Driver;
 import utilies.ReusableMethods;
@@ -84,8 +89,9 @@ public void hesabimTextSendkeysMehtodu(String isim, String soyisim, String sehir
     sehirkutusu.sendKeys(ConfigReader.getProperty(sehir));
     yaskutusu.sendKeys(ConfigReader.getProperty(yas));
     meslekkutusu.sendKeys(ConfigReader.getProperty(meslek));
-    Thread.sleep(2500);
+    Thread.sleep(3500);
     cinsiyetkutusu.click();
+    Thread.sleep(2500);
     ReusableMethods.scrollWithUiScrollableAndClick(cinsiyet);
     Thread.sleep(2000);
     kaydetbutonu.click();

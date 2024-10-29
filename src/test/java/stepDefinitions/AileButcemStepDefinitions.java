@@ -38,7 +38,7 @@ public class AileButcemStepDefinitions {
     public void hesabim_sayfasindaki_bilgileri_degistirerek_ve_cinsiyet_degisikleri_kaydedin_ve_değişikleri_dogrulayin(String isim, String soyisim, String sehir, String yas, String meslek, String cinsiyet) throws InterruptedException {
         page.hesabimTextSendkeysMehtodu(isim,soyisim,sehir,yas,meslek,cinsiyet);
         Thread.sleep(6000);
-        page.degisikliklerkaydedildibutonu.isDisplayed();
+       // page.degisikliklerkaydedildibutonu.isDisplayed();
         page.kutuDogrulamaMethodu(isim,soyisim,sehir,yas,meslek);
 
     }

@@ -15,7 +15,7 @@ public class BrowserDriver {
     private static AndroidDriver<AndroidElement> appiumDriver;
     private static IOSDriver<IOSElement> iosDriver;
 
-    static final String TELEFONADI="Pixel 4";
+    static final String TELEFONADI="Pixell";
     static final String ANDROIDVERSION="10.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
@@ -38,8 +38,7 @@ public class BrowserDriver {
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
 
             caps.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
-           // caps.setCapability("chromedriverExecutable","C:\\Users\\Elif Kesen\\IdeaProjects\\T144_Appium_Cucumber\\Driver\\chromedriver.exe");
-
+            //caps.setCapability("chromedriverExecutable","C:\\Users\\Elif Kesen\\IdeaProjects\\T144_Appium_Cucumber\\Driver\\chromedriver.exe");
 
             caps.setCapability(MobileCapabilityType.NO_RESET,false);
             /* eger bu capability FALSE olarak kullanilirsa,uygulama test edildikten sonra her seferinde kullanici datalari temizlenir ve

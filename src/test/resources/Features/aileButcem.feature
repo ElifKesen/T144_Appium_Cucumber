@@ -5,7 +5,7 @@ Feature:Kullanici AileButcem uygulamasindaki gorevleri yapar
     * "mail" ve "password" bilgilerini girerek kullanici bilgileriyle "Giriş Yap"
     * uygulamaya kullanici bilgileriyle giris yapildigini dogrulayin
 
-  @144
+
     Scenario Outline: Kullaniciuygulamadaki kullanici bilgilerini degistirir ve degistigini dogrular
       * sol kisimdaki menuden "Hesabım" bolumune gidin
       * hesabim sayfasindaki bilgileri degistirerek "<isim>" "<soyisim>" "<sehir>" "<yas>" "<meslek>" ve cinsiyet "Kadın" degisikleri kaydedin ve değişikleri dogrulayin
@@ -16,7 +16,7 @@ Feature:Kullanici AileButcem uygulamasindaki gorevleri yapar
       | isim1     |  soyisim1    | sehir1      |   yas1   |  meslek1   |
       | isim2     |  soyisim2    | sehir2      |   yas2   |  meslek2   |
 
-
+  @144
   Scenario:Kullanici profil bilgilerini degistirir
 * sol kisimdaki menuden "Hesabım" bolumune gidin
 * hesabim sayfasindaki bilgileri degistirerek "isim" "soyisim" "sehir" "yas" "meslek" ve cinsiyet "Kadın" degisikleri kaydedin ve değişikleri dogrulayin

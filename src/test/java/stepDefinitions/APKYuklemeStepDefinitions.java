@@ -14,12 +14,12 @@ import java.util.concurrent.TimeUnit;
 
 public class APKYuklemeStepDefinitions {
 
-    AndroidDriver<AndroidElement>androidDriver= Driver.getAndroidDriver();
+    AndroidDriver<AndroidElement>androidDriver;
 
     @Given("Kullanici {string} uygulamasini cihaza yükler")
     public void kullanici_uygulamasini_cihaza_yükler(String apkDosyaYolu) throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 4");//cihazin adi
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixell");//cihazin adi
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");//cihazin android olmasini tanimladik
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");//Android in versiyonunu yazdik
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");// cihazin otomasyonunun saglamak icin. IOS icin XCUITest yazilacak
